@@ -34,7 +34,7 @@ for i=1:cells
 [coeffIndex timeIndex] = max(XCorrArray);
 
 i;
-% size(coeffIndex);
+size(coeffIndex);
 xXCorr(i) = coeffIndex;
 tCorr(i)=lags(timeIndex);
 
@@ -84,7 +84,7 @@ totT=totT+1;
    end
 end
 
-DC(1,:)=[DC50/totT  DC75/totT];
+DC(1,:)=[DC50/totT];
 DataOut=[perAct perCorr DC];
 size(DataOut);
 
