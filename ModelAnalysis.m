@@ -79,12 +79,12 @@ totT=totT+1;
        DC50=DC50+1;
    end
    
-   if DCdata(j)>=mn+0.7*amp11
+   if DCdata(j)>=3.0*10^(-4)
         DC75=DC75+1;
    end
 end
 
-DC(1,:)=[DC50/totT];
+DC(1,:)=[DC50/totT DC75/totT];
 DataOut=[perAct perCorr DC];
 size(DataOut);
 
